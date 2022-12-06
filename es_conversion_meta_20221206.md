@@ -872,15 +872,15 @@ count(ref, qe_method) %>%
 group_by(qe_method) %>% count(qe_method)
 ```
 
-The study selection procedure is summarized in Figure 1. We identified
-34 quasi-experimental studies on the association between child
-maltreatment and mental health (see eTable 5 for study details). These
-studies were based on 29 distinct cohorts, comprising 54,646
-participants in adjusted analyses (56.72% female, with a mean age of
-28.15 years at mental health assessment). From these studies, we
-obtained 156 effect sizes for the association between child maltreatment
-and mental health based on adjusted analyses and 103 effect sizes based
-on unadjusted analyses.
+The study selection procedure is summarized in Figure S1 in the online
+supplement. We identified 34 quasi-experimental studies on the
+association between child maltreatment and mental health (see Table S7
+in the online supplement for study details). These studies were based on
+29 distinct cohorts, comprising 54,646 participants in adjusted analyses
+(56.72% female, with a mean age of 28.15 years at mental health
+assessment). From these studies, we obtained 156 effect sizes for the
+association between child maltreatment and mental health based on
+adjusted analyses and 103 effect sizes based on unadjusted analyses.
 
 ## Quasi-experimental evidence on the association between child maltreatment and mental health
 
@@ -958,15 +958,16 @@ A multilevel random-effects meta-analysis model showed a small
 association between childhood maltreatment and mental health problems in
 quasi-experimental studies (Cohen’s d=0.31, 95% CI=0.24-0.37,
 ![I^{2}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;I%5E%7B2%7D "I^{2}")=76.27;
-Figure 2). This meta-analytic association between child maltreatment and
+Figure 1). This meta-analytic association between child maltreatment and
 mental health from quasi-experimental studies was 45.04% smaller than
 that obtained in unadjusted analyses (k=20; Cohen’s d=0.56, 95%
 CI=0.41-0.71,
 ![I^{2}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;I%5E%7B2%7D "I^{2}")=97.29
-\[eFigure 1 in the Supplement\]; p-value for difference=0.001). This
-effect size difference was consistent when the quasi-experimental
-meta-analysis was restricted to studies reporting both unadjusted and
-adjusted effect sizes (k=20; Cohen’s d=0.26, 95% CI=0.17-0.35)
+\[see Figure S2 in the online supplement\]; p-value for
+difference=0.001). This effect size difference was consistent when the
+quasi-experimental meta-analysis was restricted to studies reporting
+both unadjusted and adjusted effect sizes (k=20; Cohen’s d=0.26, 95%
+CI=0.17-0.35)
 
 ### Aggregate effect sizes across studies to derive a study-average effect size to include in the forest plot
 
@@ -1477,23 +1478,25 @@ cluster_ci_mal_pure <- metafor::robust(adjusted_mal_pure, cluster=data$ref)
 ```
 
 An Egger’s test suggested evidence of small-study bias
-(Q_moderation=8.52, p-value=0.004). We investigated the cause of this
-potential publication bias by performing leave-one-out analyses and
-found that it was due to the inclusion of data from one cohort, the ERA
-Study, which comprised a comparatively small sample (N=90-148) with
-large effect sizes linked to severe institutional neglect (Q_moderation
-after excluding ERA=2.92, p-value=0.09). We therefore conducted later
-moderation analyses both with and without effect sizes from the ERA
-Study, to ensure that results were not biased. The p-curve analysis
-(focusing on one averaged effect size per study) provided evidential
-value that a true effect was present (eFigure 2 in the Supplement).
+(Q_moderation=8.52, p-value=0.004; see Figure S3A in the online
+supplement for funnel plot). We investigated the cause of this potential
+publication bias by performing leave-one-out analyses and found that it
+was due to the inclusion of data from one cohort, the ERA Study, which
+comprised a comparatively small sample (N=90-148) with large effect
+sizes linked to severe institutional neglect (Q_moderation after
+excluding ERA=2.92, p-value=0.09; see Figure S3B in the online
+supplement for funnel plot). We therefore conducted later moderation
+analyses both with and without effect sizes from the ERA Study, to
+ensure that results were not biased. The p-curve analysis (focusing on
+one averaged effect size per study) provided evidential value that a
+true effect was present (see Figure S4 in the online supplement).
 
 Leave-one-out analyses showed that the overall meta-analytic estimate
 was not unduly influenced by individual studies, cohorts, or effect
 sizes. The meta-analytic effect size ranged between Cohen’s d=0.29 to
 0.32 (with overlapping confidence intervals) after omitting in turn each
-of the 29 cohorts, 34 studies, and 156 effect sizes (eFigures 3-4 in the
-Supplement).
+of the 29 cohorts, 34 studies, and 156 effect sizes (see Figures S5 and
+S6 in the online supplement).
 
 The meta-analytic effect size was also similar to the original estimate
 after excluding studies which assessed maltreatment as part of broader
@@ -1643,7 +1646,7 @@ n_mh_type <- data %>%
 ```
 
 The association between child maltreatment and mental health was
-generally similar across different mental health problems (Figure 4).
+generally similar across different mental health problems (Figure 3).
 Though stronger associations were found for autism symptoms, 4 of 5 of
 these effect sizes were from the ERA Study, and there was no overall
 moderation effect when this cohort was removed in a sensitivity analysis
@@ -1721,9 +1724,9 @@ n_mal_type <- data %>%
   dplyr::summarise(n = sum(max_N)) 
 ```
 
-The overall association between child maltreatment and mental health was
+The association between child maltreatment and mental health was
 moderated by the type of childhood maltreatment (Q_moderation=22.43;
-p-value=0.0042). As shown in Figure 5, emotional abuse and institutional
+p-value=0.0042). As shown in Figure 4, emotional abuse and institutional
 neglect were more strongly associated with mental health problems than
 various subtypes of maltreatment and/or broader composite measures of
 maltreatment and ACEs. Specifically, pairwise comparisons showed that
@@ -1731,8 +1734,8 @@ emotional abuse was more strongly associated with mental health than
 physical abuse, sexual abuse, emotional neglect, physical neglect, and
 broader measures of maltreatment and ACEs, while institutional neglect
 was more strongly associated with mental health than ACEs. However, the
-estimates for emotional abuse were only based on 2 studies and 3 effect
-sizes, and should be interpreted with caution.
+estimates for emotional abuse were only based only three studies and
+seven effect sizes, and should be interpreted with caution.
 
 #### Figure 5. Effect sizes for the pooled associations between different types of child maltreatment and mental health problems.
 
@@ -1994,7 +1997,7 @@ The meta-analytic association between child maltreatment and mental
 health was not moderated by sex (Q_moderation=2.917; p-value=0.09) or
 age at mental health assessment (Q_moderation=0.02; p-value=0.87). We
 did not examine moderation by race or ethnicity as the majority of
-studies (22 of 31) did not report the race or ethnicity of the sample.
+studies (24 of 35) did not report the race or ethnicity of the sample.
 
 ### Study quality
 
