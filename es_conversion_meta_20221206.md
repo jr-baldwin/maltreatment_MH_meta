@@ -1058,7 +1058,7 @@ agg_data$ref_no[agg_data$ref=="Barrigon_2015"] <- 39
 agg_data$ref_no[agg_data$ref=="Beckett_2002"] <- 44
 ```
 
-#### Figure 2. Forest plot depicting the study-average effects of child maltreatment on mental health from quasi-experimental studies.
+#### Forest plot depicting the study-average effects of child maltreatment on mental health from quasi-experimental studies.
 
 ``` r
 # Forest plot of average estimates
@@ -1811,7 +1811,7 @@ CI=0.19-0.39; k=9, ES=47) versus retrospectively Cohen’s d=0.32, 95%
 CI=0.24-0.39; k=9, ES=109), Q_moderation=0.253; p-value =0.61). This was
 also the case after we conducted a sensitivity analysis excluding the
 (prospective) ERA Study on institutional neglect (Cohen’s d for
-prospective studies \[excluding ERA\]=0.25, 95% CI=0.24-0.39; k=6,
+prospective studies \[excluding ERA\]=0.25, 95% CI=0.15-0.36; k=6,
 ES=20; Q_moderation=1.01, p-value=0.31).
 
 ### Shared rater
